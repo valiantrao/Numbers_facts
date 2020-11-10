@@ -19,20 +19,44 @@
             android:gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-
-
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/input_number"
+            android:id="@+id/input_date"
             android:textSize="30sp"
             android:textCursorDrawable="@drawable/cursor_color"
             android:backgroundTint="@color/design_default_color_primary"
+            android:maxLength="2"
             android:maxLines="1"
             android:gravity="center_horizontal"
             android:textColor="@color/design_default_color_primary"
-            android:hint="Enter Number"
+            android:hint="DD"
             android:inputType="number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="30sp"
+            android:textColor="@color/design_default_color_primary"
+            android:text="/"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/input_month"
+                android:textSize="30sp"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:backgroundTint="@color/design_default_color_primary"
+                android:maxLines="1"
+                android:maxLength="2"
+                android:gravity="center_horizontal"
+                android:textColor="@color/design_default_color_primary"
+                android:hint="MM"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/look_up_btn"
@@ -49,36 +73,13 @@
             android:textColor="@color/design_default_color_secondary_variant"
             android:textSize="18sp"
             android:layout_gravity="start"
-            android:text="Do you know the facts about Number 10?"
+            android:text="Today In History:"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <TextView
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:padding="10dp"
-            android:layout_gravity="start"
-            android:text="Trivia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:text="Number 10 is unique"
-            android:layout_gravity="start"
-            android:padding="10dp"
-            android:id="@+id/txt_trivia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
 
         <TextView
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:padding="10dp"
-            android:layout_gravity="start"
-            android:text="Math"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:text="Number 10 is unique"
+            android:text="Today is special"
             android:layout_gravity="start"
             android:padding="10dp"
             android:id="@+id/txt_math"

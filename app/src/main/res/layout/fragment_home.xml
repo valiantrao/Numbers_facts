@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:padding="20dp"
             android:text="Note: You can find the facts about numbers here. Just type your number and see the magic! :)"
             android:layout_gravity="center"
@@ -34,53 +34,65 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicatorColor="@color/design_default_color_primary"
+            app:indicatorName="BallPulseIndicator"/>
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/look_up_btn"
         android:layout_marginTop="20dp"
+        android:visibility="visible"
         android:text="lookup"
         android:textColor="@color/white"
         android:background="@color/design_default_color_primary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/do_you_know_txt"
             android:padding="10dp"
             android:textColor="@color/design_default_color_secondary_variant"
             android:textSize="18sp"
             android:layout_gravity="start"
-            android:text="Do you know the facts about Number 10?"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:textStyle="bold"
             android:textColor="@color/black"
             android:padding="10dp"
+            android:textSize="20sp"
             android:layout_gravity="start"
-            android:text="Trivia"
+            android:text="Trivia about the number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <TextView
-            android:text="Number 10 is unique"
+
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_gravity="start"
             android:padding="10dp"
+            android:textSize="18sp"
             android:id="@+id/txt_trivia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:textStyle="bold"
             android:textColor="@color/black"
             android:padding="10dp"
+            android:textSize="20sp"
             android:layout_gravity="start"
-            android:text="Math"
+            android:text="Math of the number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <TextView
-            android:text="Number 10 is unique"
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_gravity="start"
             android:padding="10dp"
+            android:textSize="18sp"
             android:id="@+id/txt_math"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
