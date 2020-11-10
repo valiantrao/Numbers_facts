@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="20dp"
+            android:text="Note: You can find the facts about numbers here. Just type your number and see the magic! :)"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/input_number"
+        android:textSize="30sp"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:maxLines="1"
+        android:gravity="center_horizontal"
+        android:textColor="@color/design_default_color_primary"
+        android:hint="Enter Number"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/look_up_btn"
+        android:layout_marginTop="20dp"
+        android:text="lookup"
+        android:textColor="@color/white"
+        android:background="@color/design_default_color_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/do_you_know_txt"
+            android:padding="10dp"
+            android:textColor="@color/design_default_color_secondary_variant"
+            android:textSize="18sp"
+            android:layout_gravity="start"
+            android:text="Do you know the facts about Number 10?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_gravity="start"
+            android:text="Trivia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Number 10 is unique"
+            android:layout_gravity="start"
+            android:padding="10dp"
+            android:id="@+id/txt_trivia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_gravity="start"
+            android:text="Math"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Number 10 is unique"
+            android:layout_gravity="start"
+            android:padding="10dp"
+            android:id="@+id/txt_math"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
