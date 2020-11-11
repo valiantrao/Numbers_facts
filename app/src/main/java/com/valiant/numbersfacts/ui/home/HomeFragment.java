@@ -109,7 +109,11 @@ public class HomeFragment extends Fragment {
                         String type1 = response.getString(TYPE);
 
                         if (type1.equals(TRIVIA)){
-                            loadData(number1, MATH);
+                            if (number.equals(RANDOM)){
+                                loadData(number1, MATH);
+                            } else {
+                                loadData(number, MATH);
+                            }
                             txt_trivia.setText(text);
                             if (found){
                                 if (number.equals(RANDOM)){

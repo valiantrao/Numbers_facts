@@ -58,6 +58,20 @@
 
     </LinearLayout>
 
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicatorColor="@color/design_default_color_primary"
+            app:indicatorName="BallPulseIndicator"/>
+
+        <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/look_up_btn"
             android:layout_marginTop="20dp"
@@ -72,7 +86,7 @@
             android:padding="10dp"
             android:textColor="@color/design_default_color_secondary_variant"
             android:textSize="18sp"
-            android:layout_gravity="start"
+            android:layout_gravity="center"
             android:text="Today In History:"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
